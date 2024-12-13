@@ -5,36 +5,6 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Student Login</title>
- <link rel="stylesheet" href="styles.css">
-</head>
-<body>
- <div class="login-container">
- <h2>Student Login</h2>
- <form id="loginForm">
- <label for="email">Email ID</label>
- <input type="email" id="email" name="email" placeholder="Enter your email"
-required>
-
- <label for="password">Password</label>
- <input type="password" id="password" name="password" placeholder="Enter your
-password" required>
-
- <button type="submit">Login</button>
- </form>
- <p id="error-message" class="error-message"></p>
- </div>
- <script src="script.js"></script>
-</body>
-</html>
-
-
-//index1.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Subject Quiz</title>
  <link rel="stylesheet" href="styles1.css">
 </head>
@@ -66,27 +36,6 @@ password" required>
  <script src="script1.js"></script>
 </body>
 </html>
-
-//script.js
-document.getElementById("loginForm").addEventListener("submit", function(event) {
- event.preventDefault();
-
- const email = document.getElementById("email").value;
- const password = document.getElementById("password").value;
- const validCredentials = {
- "pratiksha@123.com": "password123",
- "priya@123.com": "password222",
- "rakshita@123.com":"password111",
- "shrusti@123.com":"password333"
- };
- if (validCredentials[email] && validCredentials[email] === password) {
-
- window.location.href = "index1.html";
- } else {
- document.getElementById("error-message").textContent = "Invalid email or
-password.";
- } }
-);
 
 //script1.js
 const subjects = {
@@ -343,60 +292,6 @@ Correct answer: ${answer.correctAnswer}`;
 }
 // Bind event listener to submit button
 document.getElementById("submit-btn").addEventListener("click", submitQuiz);
-
-//styles.css
-body {
- font-family: Arial, sans-serif;
- background-color: #f0f4f8;
- margin: 0;
- padding: 0;
-}
-.login-container {
- width: 100%;
- max-width: 400px;
- margin: 100px auto;
- padding: 30px;
- background-color: #fff;
- border-radius: 8px;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-h2 {
- text-align: center;
- color: #333;
-}
-label {
- display: block;
- margin: 10px 0 5px;
- font-size: 14px;
- color: #333;
-}
-input {
- width: 100%;
- padding: 10px;
- margin-bottom: 20px;
- border: 1px solid #ccc;
- border-radius: 4px;
- font-size: 14px;
-}
-button {
- width: 100%;
- padding: 10px;
- background-color: #4CAF50;
- color: white;
- border: none;
- border-radius: 4px;
- font-size: 16px;
- cursor: pointer;
-}
-button:hover {
- background-color: #45a049;
-}
-.error-message {
- color: red;
- font-size: 14px;
- text-align: center;
- margin-top: 20px;
-}
 
 //styles1.css
 body {
