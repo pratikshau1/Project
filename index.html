@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Subject Quiz</title>
+ <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+ <div class="quiz-container">
+ <h2>Choose a Subject for Quiz</h2>
+ <select id="subject" onchange="loadQuiz()">
+ <option value="">Select Subject</option>
+ <option value="math">VERSION CONTROLLER</option>
+ <option value="science">DSA</option>
+ <option value="history">JAVA</option>
+ </select>
+ <div id="quiz-section" style="display: none;">
+ <h3>Quiz Questions</h3>
+ <form id="quiz-form">
+ <!-- Quiz Questions will be dynamically inserted here -->
+ </form>
+ <button type="button" id="submit-btn">Submit Quiz</button>
+ </div>
+ <div id="result" style="display: none;">
+ <h3>Your Result</h3>
+ <p id="score"></p>
+ <p id="message"></p>
+ <ul id="incorrect-answers">
+ <!-- Incorrect answers and the correct answers will be displayed here -->
+ </ul>
+ </div>
+ </div>
+ <script src="script1.js"></script>
+</body>
+</html>
