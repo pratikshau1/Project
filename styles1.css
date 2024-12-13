@@ -1,1 +1,60 @@
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ padding: 20px;
+}
+.quiz-container {
+ max-width: 600px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2, h3 {
+ text-align: center;
+ color: #333;
+}
+select, button {
+ display: block;
+ width: 100%;
+ padding: 10px;
+ margin: 10px 0;
+ font-size: 16px;
+}
+button {
+ background-color: #28a745;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+}
+button:hover {
+ background-color: #218838;
+}
+fieldset {
+ border: 1px solid #ccc;
+ padding: 10px;
+ margin-bottom: 10px;
+ border-radius: 5px;
+}
+legend {
+ font-weight: bold;
+}
+label {
+ display: block;
+ margin-bottom: 5px;
+}
+#result {
+ margin-top: 20px;
+ text-align: center;
+}
+ul {
+ list-style-type: none;
+ padding-left: 0;
+}
+ul li {
+ margin-bottom: 10px;
+}
+
+
 
