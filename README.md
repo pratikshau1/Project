@@ -1,6 +1,4 @@
-# Project
-Online quiz format
-###INDEX.HTML
+//index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +26,9 @@ password" required>
  <script src="script.js"></script>
 </body>
 </html>
-###INDEX1.HTML
+
+
+//index1.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +65,8 @@ password" required>
  <script src="script1.js"></script>
 </body>
 </html>
-###SCRIPT.JS
+
+//script.js
 document.getElementById("loginForm").addEventListener("submit", function(event) {
  event.preventDefault();
 
@@ -85,7 +86,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 password.";
  } }
 );
-###SCRIPT1.JS
+
+//script1.js
 const subjects = {
  math: [
  {
@@ -340,7 +342,8 @@ Correct answer: ${answer.correctAnswer}`;
 }
 // Bind event listener to submit button
 document.getElementById("submit-btn").addEventListener("click", submitQuiz);
-###STYLES.CSS
+
+//styles.css
 body {
  font-family: Arial, sans-serif;
  background-color: #f0f4f8;
@@ -393,7 +396,8 @@ button:hover {
  text-align: center;
  margin-top: 20px;
 }
-###STYLES1.CSS
+
+//styles1.css
 body {
  font-family: Arial, sans-serif;
  background-color: #f4f4f4;
